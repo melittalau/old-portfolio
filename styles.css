@@ -28,7 +28,7 @@ body{
 /*--------------------- Fonts --------------------- */
 
 h1{ 
-    font-family: var(--font-special);
+    font-family: var(--font-copy);
     font-weight: 600;
     font-size: 28px;
     line-height: 34px;}
@@ -73,7 +73,7 @@ body{border:50px solid #ffffff;}
 
 @media only screen and (min-width:1300px){
 
-.content{ padding: 50px 12%; width: 76%; max-width:1260px;}
+.content{ padding: 50px 12%; width: 76%;}
 
 
  }
