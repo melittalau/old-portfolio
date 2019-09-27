@@ -1,0 +1,255 @@
+/* CSS files add styling rules to your content */
+
+:root {
+  --font-special: 'Caveat', cursive;
+  --color-special: #3c81ff;
+  --background-special: #f3f3f3;
+}
+
+html{
+  background-color:var(--background-special);
+  scroll-behavior: smooth;  
+  }
+
+body {
+  background-color:#ffffff; 
+  margin:10px 0px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size:16px;
+}
+
+.wrapper{  
+  margin:0px 45px;
+}
+
+h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+p{
+  font-size:18px;
+  line-height:26px;
+}
+
+.top{
+  position:fixed;
+  bottom: 40px;
+  right: 25px;
+}
+
+#up-arrow-inside-a-circle{
+transition: all 0.3s ease;
+}
+
+.top:hover #up-arrow-inside-a-circle{
+  fill:var(--color-special);
+ }
+
+/* ---------------HEADER--------------- */
+
+header{
+  padding: 40px 0px 10px;
+}
+
+
+nav{
+  display:inline-block;
+  float:right;
+}
+
+ul{
+  list-style-type:none;
+  padding-inline-start: 0px;
+
+}
+
+ul li{
+  float:left;
+  margin-left:45px;
+}
+
+nav ul li{
+  font-size:15px;
+}
+
+ul li:first-child{
+  margin-left:0px
+}
+
+nav ul li a{
+  text-transform:uppercase;
+  letter-spacing:3px;}
+
+a{
+  text-decoration:none;
+  color:#1a1a1a;
+  font-weight:600;
+  transition: all 0.3s ease;
+  cursor:pointer;
+}
+
+a:hover{
+  color:var(--color-special);
+}
+
+/* ---------------HERO--------------- */
+
+.hero{
+  padding:15vh 0px 15vh;
+}
+
+.hero h1{
+  font-size:40px;
+  line-height:40px;
+  margin:0px;
+  }
+
+.hero h2{
+  font-size:30px;
+  font-weight:400;
+  margin:20px 0px 40px;
+}
+
+.hero h2 span{font-weight:600;}
+
+.hero p{margin-bottom:50px;}
+
+.hero a{border-bottom:2px solid;}
+
+
+/* ---------------GRID--------------- */
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-gap: 40px;
+  padding: 40px 0px;
+}
+
+.grid__project{
+  grid-column: span 6;
+}
+
+.grid__project__image{
+  height:320px; 
+  background-size:cover;
+  background-position:center center;
+  transition: all 0.3 ease;
+}
+
+.grid__project__text{
+  height: auto;
+  padding: 30px 0px;
+}
+
+.grid__project__text img{
+  width:18px;
+  margin:0px 10px -3px 0px;
+}
+
+.grid__project__text a{
+  border-bottom:2px solid;
+}
+
+/* ---------------ABOUT ME--------------- */
+
+footer{
+  background-color:var(--background-special);
+  padding:0px 45px;
+  }
+
+footer img{
+    max-width: 374px;
+    width:100%;
+    margin: 0px auto 40px;}
+
+.about-me{ 
+    width: 100%;
+  max-width:fit-content;
+    margin: auto;
+  padding:50px 0px;
+}
+
+.about-me a{border-bottom:2px solid;}
+
+.impressum p{
+  text-align:center;
+  font-size:14px;
+  padding:40px 0px;
+}
+
+/* ---------------IMAGES--------------- */
+
+#grid__project--1{background-image: url('https://cdn.glitch.com/76ba9514-3a05-49c1-bf6c-5fb8c077b90b%2Ffinal-project.jpg?v=1569494205933');}
+#grid__project--2{background-image: url('https://cdn.glitch.com/76ba9514-3a05-49c1-bf6c-5fb8c077b90b%2Fclassic-oen-air.jpg?v=1569433268427');}
+#grid__project--3{background-image: url('https://cdn.glitch.com/76ba9514-3a05-49c1-bf6c-5fb8c077b90b%2Frover--overview.jpg?v=1569447821173');}
+#grid__project--4{background-image: url('https://cdn.glitch.com/76ba9514-3a05-49c1-bf6c-5fb8c077b90b%2Fhoeffner-newsletter.jpg?v=1569492595080');}
+#grid__project--5{background-image: url('https://cdn.glitch.com/76ba9514-3a05-49c1-bf6c-5fb8c077b90b%2Fhoeffner-redesign.jpg?v=1569492740808');}
+#grid__project--6{background-image: url('https://cdn.glitch.com/76ba9514-3a05-49c1-bf6c-5fb8c077b90b%2Flast-supper-muesli.jpg?v=1569485829430');}
+#grid__project--7{background-image: url('https://cdn.glitch.com/76ba9514-3a05-49c1-bf6c-5fb8c077b90b%2Fwib-jubilaeum.jpg?v=1569500660326');}
+#grid__project--8{background-image: url('https://cdn.glitch.com/76ba9514-3a05-49c1-bf6c-5fb8c077b90b%2Fwein-der-woche.jpg?v=1569501481516');}
+
+
+
+
+ 
+/* ---------------tablet - desktop Query--------------- */
+@media only screen and (min-width: 768px){
+  
+  .hero, .about-me{
+  width: 60%;
+  margin: auto;
+  }
+
+.hero h1{font-size:50px;}
+
+  
+.grid__project__image{height:450px;}
+  
+  header{
+  width:90%;
+}
+  
+}
+
+
+/* ---------------tablet Query--------------- */
+@media only screen and (min-width: 768px) and (max-width: 1110px){
+  
+  .wrapper{margin:0px 50px;}
+  
+  footer{padding:0px 50px;}
+  
+.grid__project{ grid-column: span 3;}  
+  
+
+  
+}
+
+/* ---------------desktop Query--------------- */
+@media only screen and (min-width: 1111px) and (max-width: 1339px){
+  
+.wrapper{margin:0px 50px;}
+  footer{padding:0px 50px;}
+  
+}
+
+/* ---------------desktop plus Query--------------- */
+@media only screen and (min-width: 1111px){
+  
+.grid__project{grid-column: span 3;}
+  
+  
+}
+
+/* ---------------large desktop Query--------------- */
+
+@media only screen and (min-width: 1340px){
+  
+  .wrapper{
+  margin:auto;
+  max-width:1240px;
+  }
+  
+}
