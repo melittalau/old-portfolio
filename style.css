@@ -138,6 +138,8 @@ a:hover{
   transition: all 0.3 ease;
 }
 
+.grid__project__image:hover{filter: brightness(105%)}
+
 .grid__project__text{
   height: auto;
   padding: 30px 0px;
